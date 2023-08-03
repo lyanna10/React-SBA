@@ -1,3 +1,31 @@
+## Description
+My App is a React application that allows users to search for weather information for different cities. 
+It fetches weather data from the OpenWeatherMap API and displays the current weather condition, temperature, and humidity. 
+Users can toggle between Celsius and Fahrenheit units for temperature display. 
+The background image of the app changes based on the weather condition, providing a visually appealing user experience.
+
+## Features
+- Search for weather by city name
+- Toggle between Celsius and Fahrenheit units
+- Dynamic background image based on weather condition
+
+## Technologies Used
+- React
+- Redux
+- Axios
+- OpenWeatherMap API
+
+## Installation
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Start the development server with `npm start`.
+
+## Usage
+- Type a city name in the search input to fetch weather information.
+- Click the buttons to toggle temperature units between Celsius and Fahrenheit.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

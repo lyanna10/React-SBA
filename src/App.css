@@ -1,38 +1,98 @@
+:root{
+    --section-divContainer: rgba(0, 0, 0, 0.7);
+    --background-divContainer: rgba(0, 0, 0, 0.1)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
 .App {
-  text-align: center;
+    width: 100%;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-position: center;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.divContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-divContainer);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 750px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.divSection {
+    width: 100%;
+    color: white;
+    padding: 2px;
+    border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.divSectionInput, .divSectionTemp {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--section-divContainer);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.labelInput > input {
+    border: 1px solid grey;
+    border-radius: 7px;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    margin: 5px;
+}
+
+.labelInput > button {
+    border: 1px solid grey;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.divSection .tempButton {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    font-size: 18px;
+    margin: 5px;
+    font-weight: 600px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.temp > h2 {
+    text-transform: capitalize;
+}
+
+.temperature > h3 {
+    font-size: 42px;
 }

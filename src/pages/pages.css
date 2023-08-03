@@ -1,0 +1,10 @@
+.describeDiv {
+    background-color: var(--section-divContainer);
+    color: white;
+    padding-top: 50px;
+    border-radius: 7px;
+    margin-bottom: 10%;
+    height: 30%;
+    font-size: 30px;
+}
+
