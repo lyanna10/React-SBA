@@ -2,7 +2,6 @@ import Image1 from './images/weatherApp1.jpeg'
 import Hot from './images/warmweather.webp'
 import Fall from './images/fallWeather.jpeg'
 import Spring from './images/springWeather.jpeg'
-import Sunny from './images/weatherapp4.webp'
 import Cold from './images/snowWeather.jpeg'
 
 import './app.css'
@@ -13,7 +12,7 @@ import {fetchWeather} from './redux/weatherSlices'
 import { useDispatch, useSelector } from 'react-redux';
 function App() {
   //State to store the city and units for weather data
-  const [City, setCity] = useState();
+  const [City, setCity] = useState("");
   const [units, setUnits] = useState('metric')
 
   //Dispatch function to send actions to Redux store
